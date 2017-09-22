@@ -771,6 +771,55 @@ textarea.form-control {
     background-color: #ffffff;
 }
 
+.carousel-control {
+    background: none;
+    opacity: 0;
+    width: 85px;
+    transition: opacity .3s linear, transform .2s linear;
+    transform: translateX(-10px);
+}
+
+.carousel-control.right {
+    transform: translateX(10px);
+}
+
+.carousel-control::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background-color: #fff;
+    top: 50%;
+    left: -50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.carousel-control.right::before {
+    left: auto;
+    right: -50%;
+}
+
+.reviews:hover .carousel-control {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.carousel-control i.fa {
+    position: absolute;
+    color: #222222;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    opacity: 1;
+    transition: all .1s linear;
+}
+
+.carousel-control.right i.fa {
+    left: auto;
+    right: 20px;
+}
+
 @media (max-width: 991px) {
     .carousel-caption p {
         padding: 0 30px;
