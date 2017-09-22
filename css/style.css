@@ -730,6 +730,10 @@ textarea.form-control {
     font-weight: 300;
 }
 
+.reviews {
+    overflow: hidden;
+}
+
 .carousel-caption {
     position: static;
 }
@@ -771,7 +775,7 @@ textarea.form-control {
     background-color: #ffffff;
 }
 
-.carousel-control {
+.reviews .carousel-control {
     background: none;
     opacity: 0;
     width: 85px;
@@ -779,7 +783,7 @@ textarea.form-control {
     transform: translateX(-10px);
 }
 
-.carousel-control.right {
+.reviews .carousel-control.right {
     transform: translateX(10px);
 }
 
@@ -1005,6 +1009,43 @@ textarea.form-control {
     .about .col-sm-6,
     .services .tab-content .col-sm-6 {
         margin-bottom: 30px;
+    }
+}
+
+.arrow-top {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+}
+
+.arrow-top i {
+    font-size: 60px;
+    color: #c6c6c6;
+}
+
+.arrow-top span {
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    top: 9px;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+}
+
+.arrow-top:hover i {
+    transition: opacity .2s linear;
+    opacity: .75;
+}
+
+.arrow-top:hover span {
+    transition: opacity .2s linear;
+    opacity: 1;
+}
+
+@media (max-width: 599px) {
+    .arrow-top {
+        display: none;
     }
 }
 
