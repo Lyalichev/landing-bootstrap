@@ -571,6 +571,21 @@ textarea.form-control {
     float: right;
 }
 
+.small-section-input-group {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.small-section-input-group input {
+    max-width: 293px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.small-section-input-group button {
+    display: inline-block;
+}
+
 @media (max-width: 1199px) {
     .contact-item-content {
         margin-left: 10px;
@@ -592,24 +607,7 @@ textarea.form-control {
         float: none;
         width: 100%;
     }
-}
 
-.small-section-input-group {
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.small-section-input-group input {
-    max-width: 293px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.small-section-input-group button {
-    display: inline-block;
-}
-
-@media (max-width: 767px) {
     .small-section-input-group button {
         display: block;
         margin: 10px auto 0;
@@ -939,9 +937,6 @@ textarea.form-control {
     .portfolio-tabs-row {
         width: 100%;
     }
-}
-
-@media (max-width: 599px) {
 
     .portfolio-tabs .nav-tabs li + li {
         margin-left: 27px;
@@ -967,6 +962,14 @@ textarea.form-control {
     font-weight: 400;
     letter-spacing: .4em;
     font-family: "Dosis", sans-serif;
+}
+
+.services .tab-content > .active {
+    margin: 0;
+}
+
+.services .tab-content{
+    overflow: hidden;
 }
 
 .service-tabs .icon {
@@ -996,16 +999,10 @@ textarea.form-control {
 
 @media (max-width: 767px) {
     .service-tabs .nav-tabs li {
-        width: 50%;
+        width: 33.3333%;
         margin-bottom: 20px;
     }
 
-    .service-tabs .nav-tabs li:first-child {
-        width: 100%;
-    }
-}
-
-@media (max-width: 767px) {
     .about .col-sm-6,
     .services .tab-content .col-sm-6 {
         margin-bottom: 30px;
