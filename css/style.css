@@ -364,6 +364,11 @@ textarea.form-control {
 
     .inner-content h6 {
         margin-bottom: 40px;
+        font-size: 17px;
+    }
+
+    .inner-content span{
+        font-size: 15px;
     }
 }
 
@@ -619,6 +624,19 @@ textarea.form-control {
     }
 }
 
+@media (max-width: 599px) {
+    .warning.contact-us-warning{
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+        line-height: 0;
+    }
+
+    .form-sumbit button{
+        float: left;
+    }
+}
+
 .title a {
     font-size: 11px;
     letter-spacing: .4em;
@@ -638,7 +656,7 @@ textarea.form-control {
     color: #777;
     font-weight: 400;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
 }
 
 .news-content span {
@@ -687,7 +705,6 @@ textarea.form-control {
 
 .footer {
     padding: 140px 0 60px;
-    background-color: #f8f8f8;
 }
 
 .footer-logo {
@@ -939,18 +956,17 @@ textarea.form-control {
     }
 
     .portfolio-tabs .nav-tabs li + li {
-        margin-left: 27px;
+        margin-left: 0;
+        margin-top: 10px;
     }
 
     .portfolio-tabs .nav-tabs li {
-        font-size: 11px;
+        display: block;
+        text-align: left;
     }
-}
 
-@media (max-width: 479px) {
-
-    .portfolio-tabs .nav-tabs li {
-        letter-spacing: 0;
+    .portfolio-tabs .nav-tabs{
+        margin-left: 20px;
     }
 }
 
@@ -1006,6 +1022,12 @@ textarea.form-control {
     .about .col-sm-6,
     .services .tab-content .col-sm-6 {
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 479px) {
+    .service-tabs .tablist-title{
+        letter-spacing: .1em;
     }
 }
 
